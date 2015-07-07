@@ -1,0 +1,12 @@
+<div class="container target">
+  <div class="row"><div class="col-md-12 domain">
+    <h1><%= @target.domain %></h1>
+  </div></div>
+  <% @target.scans.each do |scan| %>
+  <div class="row scan">
+    <div class="col-md-4"><%= link_to scan.scan_type, scan, class: 'btn btn-primary btn-sm' %></div>
+    <div class="col-md-4"><%= scan.date.to_s(:default) %></div>
+    <div class="col-md-4"><%= state_label scan.state %></div>
+  </div>
+  <% end %>
+</div>

@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  target_id: 
+  protocol: MyString
+  port: 1
+  path: MyString
+  service_type_id: 
+  serice_version_id: 
+
+two:
+  target_id: 
+  protocol: MyString
+  port: 1
+  path: MyString
+  service_type_id: 
+  serice_version_id: 

@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="header row">
+    <%= link_to "Add Scan Type", new_scan_type_path, class: "btn btn-new btn-primary btn-lg pull-right" %>
+  </div>
+  <% ScanType.all.each do |s| %>
+  <div class="row scan-type">
+    <div class="col-md-2 name"><%= s %></div>
+    <div class="col-md-6 command"><pre><%= s.command %></pre></div>
+    <div class="col-md-2 service-type"><%= s.service_type %></div>
+    <div class="col-md-2 version"><%= s.service_version %></div>
+  </div>
+  <% end %>
+</div>

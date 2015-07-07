@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  domain: MyString
+  port: 1
+  path: MyString
+  protocolo: MyString
+
+two:
+  domain: MyString
+  port: 1
+  path: MyString
+  protocolo: MyString

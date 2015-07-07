@@ -1,0 +1,12 @@
+<div class="targets container">
+  <div class="header row">
+    <%= link_to "Add Targets", new_target_path, class: "btn btn-new btn-primary btn-lg pull-right" %>
+  </div>
+  <% Target.all.each do |t| %>
+  <div class="target row">
+    <div class="domain col-md-6"><%= link_to t, t, class: 'btn btn-primary btn-sm' %></div>
+    <div class="service_count col-md-2"><%= t.services.count %> services</div>
+    <div class="scans_count col-md-2"><%= t.scans.count %> scans</div>
+  </div>
+  <% end %>
+</div>

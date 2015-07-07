@@ -1,0 +1,6 @@
+<div class="container">
+<%= form_for :target, url: targets_path do |f| %>
+  <%= f.text_area :domains, class: "form-control big-area"%>
+  <%= f.submit "Add Targets", class: "btn btn-primary btn-lg"%>
+<% end %>
+</div>

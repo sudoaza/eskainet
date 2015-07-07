@@ -1,0 +1,9 @@
+<div class="container">
+<%= form_for :scan_type, url: scan_types_path do |f| %>
+  <%= f.text_field  :name, class: "form-control", placeHolder: "Name" %>
+  <%= f.text_field  :command, class: "form-control", placeHolder: "Command" %>
+  <%= f.collection_select :service_type_id, ServiceType.all, :id, :name %>
+  <%= f.collection_select :service_version_id, ServiceVersion.all, :id, :version %>
+  <%= f.submit "Add Scan Type", class: "btn btn-primary btn-lg"%>
+<% end %>
+</div>

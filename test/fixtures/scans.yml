@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  scan_type: 
+  target: 
+  date: 2015-06-20
+  output: MyText
+
+two:
+  scan_type: 
+  target: 
+  date: 2015-06-20
+  output: MyText

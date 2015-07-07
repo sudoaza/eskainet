@@ -1,0 +1,13 @@
+<div class="container scan">
+  <div class="row header">
+    <h2 class="scan-type"><%= @scan.scan_type %></h2>
+    <strong class="date"><%= @scan.date.to_s(:default) %></strong>
+    <%= state_label @scan.state %>
+  </div>
+  <div class="row">
+    <div clas="col-md-12 live-command"><p><%= @scan.live_command %><p></div>
+  </div>
+  <div class="row">
+    <div class="col-md-12 output"><pre><%= @scan.output %></pre></div>
+  </div>
+</div>
